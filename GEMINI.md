@@ -64,3 +64,22 @@ npm start
 ```
 
 This will start both the Angular frontend and the NestJS backend concurrently.
+
+## Ng-Matero UI Guidelines
+
+When generating code for the Header or Toolbar (`<mat-toolbar>`):
+
+1.  **NO Solid Primary Colors**: Never use `color="primary"`, `color="accent"`, or `color="warn"` on the `<mat-toolbar>` tag. The header must not be a solid block of color.
+2.  **Use Matero Classes**: Always add the classes `matero-toolbar` and `mat-elevation-z4` to the `<mat-toolbar>`.
+3.  **Background & Icons**:
+    * The background must be white (or handled by the theme for dark mode).
+    * Icons inside the toolbar must be the default dark gray, not white.
+4.  **Structure**:
+    * Wrap the logo/title in `<div class="matero-branding">`.
+    * Use standard `<button mat-icon-button>` for actions.
+
+**Correct Example:**
+```html
+<mat-toolbar class="matero-toolbar mat-elevation-z4">
+  <div class="matero-branding">...</div>
+</mat-toolbar>

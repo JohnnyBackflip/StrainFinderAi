@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   template: `
-    <mat-toolbar color="primary">
+    <mat-toolbar color="tertiary">
       <span>StrainBaseAi</span>
     </mat-toolbar>
     <div class="content">
